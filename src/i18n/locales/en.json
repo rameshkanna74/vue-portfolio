@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "systemOnline": "System Online",
+    "title": "Python Backend Engineer",
+    "tagline": "Building Scalable Python Applications • Distributed Systems • APIs • Machine Learning",
+    "cta": "View My Work",
+    "contact": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "summary": "Backend Engineer with 2+ years of experience building scalable Python applications using Django, FastAPI, and PostgreSQL. Expert in REST API design, performance optimization, and containerized deployment. Strong foundation in distributed systems, microservices architecture, and machine learning pipelines. Proven track record of improving system performance by 30–40% and processing 50,000+ documents with 95%+ accuracy. 200+ LeetCode problems solved demonstrating advanced algorithmic proficiency."
+  },
+  "profile": {
+    "name": "Ramesh Kanna",
+    "title": "Python Backend Engineer",
+    "location": "Puducherry, India",
+    "email": "rameshkanna788@gmail.com",
+    "phone": "+91-637-467-5973",
+    "languages": {
+      "tamil": "Tamil (Native)",
+      "english": "English (Professional)",
+      "japanese": "Japanese (Conversational)",
+      "certification": "NAT 3Q Certification (Currently studying for JLPT N2)"
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mldata": "ML/Data",
+      "tools": "Tools"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewDetails": "View Details",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "present": "Present",
+    "achievements": "Key Achievements",
+    "technologies": "Technologies Used"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's build something amazing together",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "in": "in"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "download": "Download",
+    "resume": "Resume",
+    "portfolio": "Portfolio"
+  },
+  "homeNav": {
+    "title": "Navigation",
+    "about": {
+      "title": "About Me",
+      "description": "Learn about my background, experience, and what drives me as a developer."
+    },
+    "skills": {
+      "title": "Skills",
+      "description": "Explore my technical expertise, languages, and tools I work with."
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "View my professional journey, career timeline, and key achievements."
+    }
+  }
+}
