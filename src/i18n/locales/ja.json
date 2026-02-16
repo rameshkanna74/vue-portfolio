@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "自己紹介",
+    "projects": "プロジェクト",
+    "experience": "職務経歴",
+    "skills": "技術スキル",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "greeting": "こんにちは、",
+    "systemOnline": "システムオンライン",
+    "title": "Pythonバックエンドエンジニア",
+    "tagline": "スケーラブルなPythonアプリケーション開発 • 分散システム • API • 機械学習",
+    "cta": "作品を見る",
+    "contact": "お問い合わせ"
+  },
+  "about": {
+    "title": "自己紹介",
+    "summary": "Pythonバックエンドエンジニアとして2年以上の実務経験を有し、Django、FastAPI、PostgreSQLを用いた大規模Webアプリケーションの設計・開発・運用に強みを持っています。REST API設計、パフォーマンス最適化、コンテナ化されたデプロイメントに精通しています。分散システム、マイクロサービスアーキテクチャ、機械学習パイプラインの確かな基盤を持ち、システムパフォーマンスを30〜40%向上させ、50,000件以上のドキュメントを95%以上の精度で処理した実績があります。LeetCodeで200問以上を解決し、高度なアルゴリズム能力を実証しています。"
+  },
+  "profile": {
+    "name": "ラメシュ・カンナ",
+    "title": "Pythonバックエンドエンジニア",
+    "location": "インド ポンディシェリー",
+    "email": "rameshkanna788@gmail.com",
+    "phone": "+91-637-467-5973",
+    "languages": {
+      "tamil": "タミル語（ネイティブ）",
+      "english": "英語（ビジネスレベル）",
+      "japanese": "日本語（日常会話レベル）",
+      "certification": "NAT-TEST 3級取得済み（現在JLPT N2を勉強中）"
+    },
+    "japaneseStudy": {
+      "title": "日本語学習",
+      "current": "現在JLPT N2レベルを勉強中",
+      "school": "iTokyo Academy Coimbatore",
+      "certification": "NAT-TEST 3級合格（JLPT N3相当）",
+      "motivation": "日本での就業を見据えて、ビジネス日本語と日本文化を集中的に学習しています"
+    }
+  },
+  "skills": {
+    "title": "技術スキル",
+    "categories": {
+      "frontend": "フロントエンド",
+      "backend": "バックエンド",
+      "mldata": "機械学習・データ",
+      "tools": "ツール・インフラ"
+    },
+    "yearsExp": "{years}年の経験"
+  },
+  "projects": {
+    "title": "主要プロジェクト",
+    "viewDetails": "詳細を見る",
+    "liveDemo": "デモを見る",
+    "sourceCode": "ソースコード",
+    "highlights": "主な成果",
+    "technologies": "使用技術"
+  },
+  "experience": {
+    "title": "職務経歴",
+    "present": "現在",
+    "achievements": "主な実績",
+    "technologies": "使用技術",
+    "duration": "{start}年{startMonth}月 〜 {end}年{endMonth}月",
+    "durationPresent": "{start}年{startMonth}月 〜 現在"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "一緒に素晴らしいものを作りましょう",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ",
+    "send": "送信",
+    "sending": "送信中...",
+    "success": "メッセージを送信しました！",
+    "error": "送信に失敗しました。もう一度お試しください。"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "in": "in"
+  },
+  "common": {
+    "readMore": "続きを読む",
+    "learnMore": "詳細を見る",
+    "download": "ダウンロード",
+    "resume": "職務経歴書",
+    "portfolio": "ポートフォリオ"
+  },
+  "motivation": {
+    "title": "志望動機",
+    "japan": {
+      "title": "日本での就業を希望する理由",
+      "content": "私は日本の「品質へのこだわり」と「チームワークを重んじる文化」に深く共感しており、自身の技術力を日本のIT産業で発揮したいと強く願っています。特に、堅牢で長期的に運用可能なシステムを構築することに情熱を持っており、日本のエンジニアリング文化から多くを学び、貢献できると確信しています。"
+    },
+    "technical": {
+      "title": "技術力と適応力",
+      "content": "バックエンド開発においては、単にコードを書くだけでなく、「なぜその技術を選ぶのか」「どうすれば保守しやすくなるか」を常に考え、設計段階から品質向上に努めています。また、新しい技術へのキャッチアップも早く、現在はRust言語の学習も進めています。"
+    },
+    "communication": {
+      "title": "日本語能力とコミュニケーション",
+      "content": "現在はインドの語学学校にて、毎日日本語を学習しています。技術的な会話だけでなく、日本のビジネスマナーや文化についても学んでおり、入社後は円滑なコミュニケーションが取れるよう努力を続けています。技術力と言語力の両面で、貴社のプロジェクトに貢献できることを楽しみにしています。"
+    }
+  },
+  "homeNav": {
+    "title": "ナビゲーション",
+    "about": {
+      "title": "自己紹介",
+      "description": "私の経歴、経験、そして開発者としての情熱についてご紹介します。"
+    },
+    "skills": {
+      "title": "技術スキル",
+      "description": "私が使用している技術、言語、ツールについて詳しくご覧いただけます。"
+    },
+    "experience": {
+      "title": "職務経歴",
+      "description": "これまでのキャリア、職歴、主な実績をご覧いただけます。"
+    }
+  }
+}
