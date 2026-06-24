@@ -44,7 +44,17 @@ export interface Project {
   links?: {
     github?: string;
     demo?: string;
+    caseStudy?: string;
   };
+  businessProblem?: string;
+  architecture?: { id: string; label: string; icon: string; type: string; desc: string; }[];
+  pipeline?: { name: string; status: string; duration: string; icon: string; }[];
+  monitoringStrategy?: string;
+  securityControls?: string[];
+  reliabilityStrategy?: string;
+  lessonsLearned?: string[];
+  businessImpact?: { metric: string; value: string; label: string; }[];
+  projectMetrics?: { label: string; value: string; }[];
 }
 
 export interface Experience {
