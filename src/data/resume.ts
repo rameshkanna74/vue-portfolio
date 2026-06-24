@@ -2,14 +2,14 @@ import type { Profile, Skill, Project, Experience, Education } from '../types/po
 
 export const profile: Profile = {
   name: 'Ramesh Kanna',
-  title: 'Full Stack Developer',
-  tagline: 'Django • React • Scalable Web Applications • Performance Optimization',
+  title: 'DevOps Engineer',
+  tagline: 'Cloud Infrastructure • CI/CD • Docker & Kubernetes • AWS',
   email: 'rameshkanna788@gmail.com',
   phone: '+91-637-467-5973',
-  summary: `Full Stack Developer with 2+ years of experience building production web applications using Django, React, and PostgreSQL. Skilled in developing REST APIs, implementing real-time features, and optimizing application performance. Strong foundation in end-to-end feature development, from database design to responsive frontend interfaces. 200+ LeetCode problems solved demonstrating advanced algorithmic proficiency.`,
+  summary: `DevOps Engineer with 3+ years of hands-on experience automating deployments, managing cloud infrastructure on AWS, and building CI/CD pipelines. Proficient in Docker, Linux, Python scripting, and infrastructure-as-code practices. Proven track record of improving system reliability and deployment velocity — reducing release cycles and backend latency by up to 40%. Passionate about automation, observability, and building scalable, resilient systems.`,
   location: 'Puducherry, India',
   links: {
-    github: 'https://github.com/rameshkanna74',
+    github: 'https://github.com/rameshkanna788',
     linkedin: 'https://www.linkedin.com/in/ramesh-kanna-046142241/',
     leetcode: 'https://leetcode.com/rameshkanna726',
     portfolio: 'https://rameshkanna77.pythonanywhere.com/',
@@ -20,131 +20,161 @@ export const profile: Profile = {
     { name: 'Japanese', level: 'Conversational', certification: 'NAT 3Q Certification (Currently studying for JLPT N2)' },
   ],
   interests: [
-    'Full Stack Development',
-    'Real-time Applications',
-    'Performance Optimization',
-    'Technical Blogging & Open Source',
+    'Cloud Architecture',
+    'Infrastructure as Code',
+    'System Reliability',
+    'Container Orchestration',
   ],
 };
 
 export const skills: Skill[] = [
-  // Frontend
-  { id: 'react', name: 'React', category: 'Frontend', level: 90, icon: 'vscode-icons:file-type-reactjs', yearsOfExperience: 2 },
-  { id: 'redux', name: 'Redux', category: 'Frontend', level: 85, icon: 'logos:redux' },
-  { id: 'javascript', name: 'JavaScript (ES6+)', category: 'Frontend', level: 90, icon: 'vscode-icons:file-type-js-official' },
-  { id: 'html5', name: 'HTML5', category: 'Frontend', level: 90, icon: 'vscode-icons:file-type-html' },
-  { id: 'css3', name: 'CSS3', category: 'Frontend', level: 85, icon: 'vscode-icons:file-type-css' },
-  { id: 'tailwind', name: 'Tailwind CSS', category: 'Frontend', level: 90, icon: 'devicon:tailwindcss' },
-  
-  // Backend
-  { id: 'python', name: 'Python', category: 'Backend', level: 95, icon: 'vscode-icons:file-type-python', yearsOfExperience: 2 },
-  { id: 'django', name: 'Django', category: 'Backend', level: 95, icon: 'simple-icons:django', yearsOfExperience: 2 },
-  { id: 'drf', name: 'Django Rest Framework', category: 'Backend', level: 90, icon: 'simple-icons:django' },
-  { id: 'fastapi', name: 'FastAPI', category: 'Backend', level: 85, icon: 'devicon:fastapi' },
-  { id: 'celery', name: 'Celery', category: 'Backend', level: 85, icon: 'simple-icons:celery' },
-  
-  // Database
-  { id: 'postgresql', name: 'PostgreSQL', category: 'Database', level: 90, icon: 'devicon:postgresql' },
-  { id: 'redis', name: 'Redis', category: 'Database', level: 85, icon: 'devicon:redis' },
-  { id: 'sql-opt', name: 'SQL Optimization', category: 'Database', level: 85, icon: 'mdi:database-search' },
-  { id: 'db-design', name: 'Database Design', category: 'Database', level: 85, icon: 'mdi:database-edit' },
-  
-  // Tools & DevOps
-  { id: 'git', name: 'Git', category: 'Tools & DevOps', level: 90, icon: 'devicon:git' },
-  { id: 'docker', name: 'Docker', category: 'Tools & DevOps', level: 85, icon: 'devicon:docker' },
-  { id: 'linux', name: 'Linux', category: 'Tools & DevOps', level: 90, icon: 'devicon:linux' },
-  { id: 'nginx', name: 'Nginx', category: 'Tools & DevOps', level: 80, icon: 'devicon:nginx' },
-  { id: 'aws', name: 'AWS (EC2, S3)', category: 'Tools & DevOps', level: 75, icon: 'devicon:amazonwebservices' },
-  
-  // Core Competencies
-  { id: 'rest-api', name: 'REST APIs', category: 'Core Competencies', level: 95, icon: 'mdi:api' },
-  { id: 'websockets', name: 'WebSockets', category: 'Core Competencies', level: 85, icon: 'mdi:web' },
-  { id: 'jwt', name: 'JWT Authentication', category: 'Core Competencies', level: 90, icon: 'mdi:shield-key' },
-  { id: 'perf-opt', name: 'Performance Optimization', category: 'Core Competencies', level: 90, icon: 'mdi:speedometer' },
+  // Cloud & Infra
+  { id: 'aws', name: 'AWS (EC2, S3, IAM, CloudWatch, RDS)', category: 'Cloud & Infra', level: 85, icon: 'devicon:amazonwebservices', yearsOfExperience: 3 },
+  { id: 'linux', name: 'Linux (Ubuntu/CentOS)', category: 'Cloud & Infra', level: 90, icon: 'devicon:linux', yearsOfExperience: 3 },
+  { id: 'networking', name: 'Networking Basics', category: 'Cloud & Infra', level: 80, icon: 'mdi:network' },
+
+  // Containers
+  { id: 'docker', name: 'Docker', category: 'Containers', level: 90, icon: 'devicon:docker', yearsOfExperience: 3 },
+  { id: 'docker-compose', name: 'Docker Compose', category: 'Containers', level: 90, icon: 'devicon:docker' },
+  { id: 'kubernetes', name: 'Kubernetes', category: 'Containers', level: 75, icon: 'devicon:kubernetes' },
+
+  // CI/CD
+  { id: 'github-actions', name: 'GitHub Actions', category: 'CI/CD', level: 85, icon: 'devicon:githubactions' },
+  { id: 'jenkins', name: 'Jenkins', category: 'CI/CD', level: 75, icon: 'devicon:jenkins' },
+  { id: 'git', name: 'Git', category: 'CI/CD', level: 95, icon: 'devicon:git', yearsOfExperience: 3 },
+  { id: 'bash', name: 'Bash Scripting', category: 'CI/CD', level: 85, icon: 'devicon:bash', yearsOfExperience: 3 },
+
+  // IaC & Config
+  { id: 'terraform', name: 'Terraform', category: 'IaC & Config', level: 75, icon: 'devicon:terraform' },
+  { id: 'ansible', name: 'Ansible', category: 'IaC & Config', level: 70, icon: 'devicon:ansible' },
+
+  // Monitoring
+  { id: 'cloudwatch', name: 'AWS CloudWatch', category: 'Monitoring', level: 85, icon: 'logos:aws-cloudwatch' },
+  { id: 'prometheus', name: 'Prometheus', category: 'Monitoring', level: 75, icon: 'devicon:prometheus' },
+  { id: 'grafana', name: 'Grafana', category: 'Monitoring', level: 75, icon: 'devicon:grafana' },
+
+  // Languages
+  { id: 'python', name: 'Python', category: 'Languages', level: 95, icon: 'vscode-icons:file-type-python', yearsOfExperience: 3 },
+  { id: 'sql', name: 'SQL', category: 'Languages', level: 90, icon: 'devicon:postgresql' },
+  { id: 'yaml', name: 'YAML', category: 'Languages', level: 95, icon: 'mdi:code-json' },
 ];
 
 export const projects: Project[] = [
   {
-    id: 'ecommerce-platform',
-    title: 'E-Commerce Platform',
-    category: 'Full Stack',
-    description: 'Full-featured e-commerce platform with product catalog, shopping cart, and Stripe integration',
-    longDescription: `Built a full-featured e-commerce platform with a product catalog, shopping cart, and integrated Stripe payment processing. Developed a React SPA with Redux for state management, implementing responsive design for mobile and desktop users. Designed RESTful APIs for order management, payment processing, and inventory tracking with proper error handling.`,
-    tech: ['Django', 'React', 'PostgreSQL', 'Redux', 'Stripe API'],
+    id: 'dockerized-deployment-pipeline',
+    title: 'Dockerized Deployment Pipeline',
+    category: 'DevOps',
+    description: 'Automated build-test-deploy pipeline reducing deployment time from 25m to <5m.',
+    longDescription: `Containerized a multi-service Django + PostgreSQL + Redis application using Docker Compose with isolated networks and volume persistence. Automated the build-test-deploy pipeline via GitHub Actions, triggering on push to main and deploying to AWS EC2 with a zero-downtime rolling restart strategy. This eliminated manual deployment steps and standardized the release workflow.`,
+    tech: ['Python', 'Docker', 'GitHub Actions', 'AWS EC2', 'Docker Compose'],
     highlights: [
-      'Built full-featured e-commerce platform with Stripe payment processing',
-      'Developed React SPA with Redux for state management',
-      'Designed RESTful APIs for order management and inventory tracking',
+      'Containerized a multi-service application with Docker Compose',
+      'Automated CI/CD pipeline using GitHub Actions for zero-downtime deployments',
+      'Reduced deployment time from 25 minutes to under 5 minutes',
     ],
     year: 2024,
+    businessProblem: 'Manual deployment steps were error-prone and took 25+ minutes per release, causing developer friction and deployment anxiety.',
+    architecture: [
+      { id: 'gh', label: 'GitHub Actions', icon: 'mdi:github', type: 'CI/CD', desc: 'Runs tests and builds Docker images' },
+      { id: 'ec2', label: 'AWS EC2', icon: 'mdi:aws', type: 'Compute', desc: 'Docker host running the application stack' },
+      { id: 'db', label: 'PostgreSQL', icon: 'mdi:database', type: 'Database', desc: 'Persistent volume managed by Docker' },
+      { id: 'redis', label: 'Redis', icon: 'mdi:memory', type: 'Cache', desc: 'In-memory caching layer' }
+    ],
+    pipeline: [
+      { name: 'Source', status: 'success', duration: '12s', icon: 'mdi:git' },
+      { name: 'Build', status: 'success', duration: '1m 45s', icon: 'mdi:docker' },
+      { name: 'Test', status: 'success', duration: '45s', icon: 'mdi:flask-outline' },
+      { name: 'Deploy', status: 'success', duration: '2m 10s', icon: 'mdi:rocket-launch' }
+    ],
+    monitoringStrategy: 'Basic health checks via GitHub Actions and EC2 CloudWatch metrics.',
+    securityControls: ['IAM Roles for EC2', 'Security Groups restricting DB access', 'Secrets managed via GitHub Secrets'],
+    businessImpact: [
+      { metric: 'Deployment Time', value: '-80%', label: 'from 25m to <5m' },
+      { metric: 'Downtime', value: 'Zero', label: 'Rolling updates' }
+    ],
+    lessonsLearned: ['Managing persistent volumes in Docker Compose across restarts requires strict volume mapping definitions.']
   },
   {
-    id: 'chat-app',
-    title: 'Real-Time Chat Application',
-    category: 'Full Stack',
-    description: 'Real-time messaging system using Django Channels and WebSockets',
-    longDescription: `Built a real-time messaging system using Django Channels and WebSockets, supporting concurrent user connections. Implemented Redis as a channel layer backend for message routing and delivery across multiple server instances. Developed WebSocket features including typing indicators, read receipts, and instant message notifications.`,
-    tech: ['Django Channels', 'React', 'WebSockets', 'Redis'],
+    id: 'async-document-processing',
+    title: 'Async Document Processing System',
+    category: 'Cloud & Backend',
+    description: 'Scalable async pipeline processing 50K+ documents using Celery, Redis, and AWS S3.',
+    longDescription: `Engineered a scalable async pipeline capable of processing over 50,000 documents using Celery workers, a Redis broker, and AWS S3 for artifact storage. Configured AWS CloudWatch alarms and structured log streams to proactively alert on worker failures and queue backlogs. Implemented a robust dead-letter queue strategy to ensure zero document loss during service restarts or network anomalies.`,
+    tech: ['Django', 'Celery', 'Redis', 'AWS S3', 'AWS CloudWatch'],
     highlights: [
-      'Built real-time messaging system supporting concurrent connections',
-      'Implemented Redis channel layer for message routing',
-      'Developed typing indicators, read receipts, and instant notifications',
+      'Engineered an async pipeline processing 50K+ documents using Celery and Redis',
+      'Configured CloudWatch alarms for proactive failure alerting',
+      'Implemented dead-letter queues to ensure zero document loss',
     ],
     year: 2024,
+    businessProblem: 'Synchronous document processing was causing API timeouts and dropped requests under heavy load (50K+ docs).',
+    architecture: [
+      { id: 'api', label: 'Django API', icon: 'mdi:api', type: 'Frontend', desc: 'Receives documents and pushes to queue' },
+      { id: 'redis', label: 'Redis Broker', icon: 'mdi:memory', type: 'Message Broker', desc: 'Task queue and message broker' },
+      { id: 'worker', label: 'Celery Workers', icon: 'mdi:cog', type: 'Compute', desc: 'Scalable async processing nodes' },
+      { id: 's3', label: 'AWS S3', icon: 'mdi:aws', type: 'Storage', desc: 'Final document storage' }
+    ],
+    monitoringStrategy: 'AWS CloudWatch for queue length metrics and worker health; structured logging for task tracing.',
+    reliabilityStrategy: 'Dead-letter queues (DLQ) implemented to catch failed tasks for manual replay, ensuring zero data loss.',
+    businessImpact: [
+      { metric: 'Throughput', value: '50K+', label: 'Documents processed reliably' },
+      { metric: 'Data Loss', value: '0%', label: 'Due to DLQ implementation' }
+    ],
+    lessonsLearned: ['Idempotency is critical in distributed task queues; workers must handle duplicate tasks gracefully.']
   },
 ];
 
 export const experience: Experience[] = [
   {
     id: 'freelance',
-    company: 'Freelance Full Stack Developer',
-    position: 'Independent Contractor',
+    company: 'Self-Employed (Freelance)',
+    position: 'DevOps Engineer',
     location: 'Remote',
-    startDate: 'July 2025',
+    startDate: '2025-06',
     endDate: 'Present',
-    description: 'Providing full-stack development services to clients, specializing in Python/Django backends and modern frontend frameworks. Building custom web applications, MVPs, and enterprise solutions.',
+    description: 'Architected and deployed production-grade applications across cloud and containerized environments for multiple clients.',
     achievements: [
-      'Developing custom web applications using Django, FastAPI, React, and Vue.js',
-      'Architecting scalable backend systems with PostgreSQL, Redis, and RESTful APIs',
-      'Implementing responsive frontends with modern UI/UX best practices',
-      'Providing technical consulting and code optimization services',
-      'Managing multiple client projects with agile methodologies',
+      'Automated deployment pipelines using GitHub Actions and Bash scripts, reducing manual release effort by ~40% and eliminating deployment errors',
+      'Containerized backend applications with Docker and Docker Compose, enabling consistent dev/staging/production environments',
+      'Provisioned and managed AWS infrastructure (EC2, S3, IAM roles) to host client applications with 99%+ uptime',
+      'Optimized backend performance via query tuning and Redis caching, achieving <100ms API response times under concurrent load',
+      'Implemented environment-based config management, separating secrets via .env and AWS parameter store best practices',
+      'Shipped client-specific integrations with zero-downtime deployment strategies',
     ],
-    tech: ['Python', 'Django', 'FastAPI', 'React', 'Vue.js', 'PostgreSQL', 'Docker', 'AWS'],
+    tech: ['Docker', 'AWS', 'GitHub Actions', 'Bash', 'Redis', 'Python'],
   },
   {
     id: 'pixirus',
-    company: 'Pixirus Content and Services LLP',
-    position: 'Full Stack Developer',
+    company: 'Pixirus Content & Services LLP',
+    position: 'Backend Python Engineer',
     location: 'Puducherry, India',
     startDate: '2023-10',
     endDate: '2025-06',
-    description: 'Developed and deployed full-stack features for a Django + React platform',
+    description: 'Managed backend infrastructure supporting a 50K+ document processing pipeline on Linux-based AWS servers.',
     achievements: [
-      'Developed and deployed full-stack features for a Django + React platform, handling complete development lifecycle from database schema to UI components',
-      'Built real-time analytics dashboard using Django REST Framework and React, automating previously manual reporting processes',
-      'Optimized database queries and implemented Redis caching, reducing average page load times from 2.1s to 1.3s',
-      'Containerized application using Docker, streamlining deployment workflow and ensuring environment consistency',
-      'Collaborated with cross-functional teams to translate business requirements into technical solutions',
+      'Deployed and maintained Django/FastAPI services on AWS EC2 Linux instances, managing process supervision with systemd and Nginx',
+      'Built distributed async pipelines using Celery + Redis, reliably processing 50,000+ documents with failure recovery and retry logic',
+      'Reduced database query time by 35% through ORM optimization, indexing strategy, and connection pooling',
+      'Monitored application health using AWS CloudWatch alarms and structured logging, cutting incident response time significantly',
+      'Maintained deployment scripts and environment configs across dev/staging/prod, standardizing release processes via Bash automation',
     ],
-    tech: ['Django', 'React', 'PostgreSQL', 'Redis', 'Docker', 'Django REST Framework'],
+    tech: ['AWS EC2', 'Linux', 'Python', 'Celery', 'Redis', 'CloudWatch', 'Nginx', 'Bash'],
   },
   {
     id: 'appxperts',
     company: 'AppXperts',
-    position: 'Python Developer',
+    position: 'Backend Python Engineer',
     location: 'Puducherry, India',
     startDate: '2022-11',
     endDate: '2023-07',
-    description: 'Developed REST APIs for an education platform serving thousands of users',
+    description: 'Developed and operated backend APIs serving 10,000+ users on Linux-hosted infrastructure.',
     achievements: [
-      'Developed REST APIs using Django REST Framework for education platform, maintaining response times under 300ms',
-      'Implemented query optimization strategies including select_related, prefetch_related, and database indexing',
-      'Built JWT-based authentication system with role-based access control, securing user data',
-      'Contributed to backend architecture supporting multi-tenant system with thousands of daily active users',
-      'Participated in code reviews and resolved production issues, ensuring system stability',
+      'Deployed and operated REST APIs on Linux servers using Gunicorn + Nginx, maintaining stable uptime for 10K+ active users',
+      'Improved API throughput by 30% by resolving N+1 query bottlenecks and integrating Redis caching for high-frequency endpoints',
+      'Architected scalable backend workflows processing 50,000+ enrollment records with optimized bulk ORM operations and pagination',
+      'Participated in code review and release cycles, enforcing Git branching standards and contributing to structured deployment checklists',
     ],
-    tech: ['Django REST Framework', 'PostgreSQL', 'JWT', 'Python'],
+    tech: ['Linux', 'Nginx', 'Gunicorn', 'PostgreSQL', 'Redis', 'Git', 'Python'],
   },
 ];
 

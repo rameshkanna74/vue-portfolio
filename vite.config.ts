@@ -1,15 +1,20 @@
 import { fileURLToPath, URL } from 'node:url'
+
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import react, { reactCompilerPreset } from '@vitejs/plugin-react'
+import babel from '@rolldown/plugin-babel'
+import tailwindcss from '@tailwindcss/vite'
 
+// https://vite.dev/config/
 export default defineConfig({
-  base: '/',
-
+  base:'/',
   plugins: [
-    vue(),
+    react(),
+    babel({ presets: [reactCompilerPreset()] }),
+    tailwindcss()
   ],
 
-  resolve: {
+    resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
@@ -19,37 +24,27 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     target: 'es2015',
-    minify: 'terser',
     cssCodeSplit: true,
     sourcemap: false,
     
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
-    
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vue-vendor': ['vue', 'vue-router', 'pinia', 'vue-i18n'],
-          'ui-vendor': ['@iconify/vue', 'gsap'],
-        },
+        // manualChunks removed to rely on Vite default behavior
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
     
-    chunkSizeWarningLimit: 500,
+    chunkSizeWarningLimit: 1000,
   },
 
   optimizeDeps: {
-    include: ['vue', 'vue-router', 'pinia', 'gsap', '@iconify/vue'],
+    include: ['gsap', '@iconify/react', 'react', 'react-dom', 'react-router-dom', 'zustand', '@iconify/react'],
   },
 
   server: {
     port: 5173,
   },
+
 })
